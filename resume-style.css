@@ -1,0 +1,121 @@
+.container { 
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+   grid-template-columns: 25% 75%;
+   border-left: 8pt solid orangered;
+   
+    
+    grid-template-areas:
+      "picture personal-information"
+      "experience-header virgin-atlantic-airlines1"
+      "experience-header virgin-atlantic-airlines2"
+      "education-header virgin-atlantic-training-acadamy"
+      "education-header railegh-high"
+      "additional-qualifications-header additional-qualification"
+      "honors-header honors"
+      "affiliations-header affiliations"
+      "... ..."
+      "... ..."
+      "... ..."
+}
+
+#picture {
+  grid-area: picture;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#personal-information {
+  grid-area: personal-information;
+  grid-column: 2/2;
+  grid-row: 2/1;
+  text-align: auto;
+}
+
+
+#experience-header {
+  grid-area: experience-header;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#experience {
+  grid-area: experience;
+  
+}
+
+#experience-header2 {
+  grid-area: experience-header2;
+}
+
+#experience2 {
+  grid-area: experience2;
+}
+
+#education {
+  grid-area: education-header;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#additional-qualifications-header {
+  grid-area: additional-qualifications-header;
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+#additional-qualifications {
+  grid-area: additional-qualifications;
+  grid-column: 2/2;
+  grid-row: 6/7;
+}
+
+#honors-header {
+  grid-area: honors-header;
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+#honors {
+  grid-area: honors-header;
+  grid-column: 2/2;
+  grid-row: 7/8;
+}
+
+#affiliations-header {
+  grid-area: affiliations-header;
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
+
+#affiliations {
+  grid-area: affiliations;
+  grid-column: 2/2;
+  grid-row: 9/10;
+}
+
+#virgin-atlantic-airlines1 {
+  grid-area: virgin-atlantic-airlines1;
+  grid-column: 2/2;
+  grid-row: 3/4;
+
+}
+
+#virgin-atlantic-airlines2 {
+  grid-area: virgin-atlantic-airlines2;
+  grid-column: 2/2;
+  grid-row: 2/3;
+}
+
+#virgin-atlantic-training-academy {
+  grid-area: virgin-atlantic-training-academy;
+}
+
+#raleigh-high {
+  grid-area: raleigh-high;
+  grid-column: 2/2;
+  grid-row: 4/5;
+}
+.description {
+  font-style: italic;
+}
