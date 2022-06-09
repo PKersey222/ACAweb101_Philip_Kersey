@@ -1,36 +1,97 @@
+.container { 
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 6 1fr;
+    grid-template-areas:
+      "header header"
+      "dream-photo dreams"
+      "buisness-photo professional"
+      "Singing-photo hobbies"
+     
+     
+}
+
+#picture {
+    grid-area: picture;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #header {
+    grid-area: header;
+    grid-column: 2/2;
+    grid-row: 2/1;
+    text-align: center;
+    color:rgb(71, 33, 207)
+  }
+  
+  #dream-photo {
+    grid-area: dream-photo;
+  }
+  #dreams{
+    grid-area: education-header;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #singing-photo {
+    grid-area: singing-photo;
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #hobbies {
+    grid-area: hobbies;
+    grid-column: 2/2;
+    grid-row: 5/6;
+  }
+ 
+  #professional {
+    grid-area: proffesional;
+    grid-column: 2/2;
+    grid-row: 2/3;
+  }
+
+  
+  #buisness-photo {
+      grid-area: buisness-photo;
+      grid-column: 1/2;
+      grid-row: 3/4;
+  }
+
+
+
 main {
     margin:0;
-    display: flex; 
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 100%;
     background: cornflowerblue;
 } 
 
 
-@media (min-width: 576px){
-    .container {
+ @media (min-width: 576px) {
+     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat (3,1fr);
+        grid-template-rows: 30pt;
         grid-template-areas: 
             "main main"
-            "section-one section-two"
-            "section-three .";
-    }
+            "banner banner"
+            "professional coding"
+            "singing hobbies"; 
+     }
 
-    main {
+  
 
-        background-color:  darkcyan;
-
-    }
-
+    } 
+ 
     h2, p {
     
         color: green;
 
     }
-}
+
 
 
 
@@ -38,19 +99,21 @@ main {
 
     body {
         background-color: black;
-    }
+     }
     .container {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
+        height: 100vh;
+        width: 100vw;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 6 1fr;
         grid-template-areas: 
-            "main main main"
-            "section-one section-two"
-            "... ..."
-            "... ...";
-    }
+            "header header"
+            "dream-photo dreams"
+            "buisness-photo professional"
+            "singing-photo hobbies"
+    } 
 
-    h1{
+     h1{
         font-size: 60px;
     }
 
@@ -61,4 +124,4 @@ main {
     .one, .two, .three {
         background-color: black;
     }
-}
+}  
