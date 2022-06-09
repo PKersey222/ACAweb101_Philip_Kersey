@@ -1,27 +1,30 @@
 .container { 
     display: grid;
-    height: 100vh;
-    width: 100vw;
-   grid-template-columns: 50% 50%;
-   grid-template-rows: 6 1fr;
+    /* height: 100vh;
+    width: 100vw; */
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
-      "header header"
-      "dream-photo dreams"
-      "buisness-photo professional"
-      "Singing-photo hobbies"
+      "header"
+      "dream-photo" 
+      "dreams"
+      "buisness-photo" 
+      "professional"
+      "singing-photo" 
+      "hobbies";
      
      
 }
 
 #picture {
     grid-area: picture;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
   }
   #header {
     grid-area: header;
-    grid-column: 2/2;
-    grid-row: 2/1;
+    /* grid-column: 2/2;
+    grid-row: 2/1; */
     text-align: center;
     color:rgb(71, 33, 207)
   }
@@ -30,56 +33,47 @@
     grid-area: dream-photo;
   }
   #dreams{
-    grid-area: education-header;
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-area: dreams;
+    /* grid-column: 1/2;
+    grid-row: 3/4; */
   }
 
   #singing-photo {
     grid-area: singing-photo;
-    grid-column: 1/2;
-    grid-row: 5/6;
+    /* grid-column: 1/2;
+    grid-row: 5/6; */
   }
   #hobbies {
     grid-area: hobbies;
-    grid-column: 2/2;
-    grid-row: 5/6;
+    /* grid-column: 2/2;
+    grid-row: 5/6; */
   }
  
   #professional {
-    grid-area: proffesional;
-    grid-column: 2/2;
-    grid-row: 2/3;
+    grid-area: professional;
+    /* grid-column: 2/2;
+    grid-row: 2/3; */
   }
 
   
   #buisness-photo {
       grid-area: buisness-photo;
-      grid-column: 1/2;
-      grid-row: 3/4;
+      /* grid-column: 1/2;
+      grid-row: 3/4; */
   }
 
-
-
-main {
-    margin:0;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background: cornflowerblue;
-} 
 
 
  @media (min-width: 576px) {
      .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 30pt;
-        grid-template-areas: 
-            "main main"
-            "banner banner"
-            "professional coding"
-            "singing hobbies"; 
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "header header"
+            "dream-photo dreams"
+            "professional buisness-photo" 
+            "singing-photo hobbies";
      }
 
   
@@ -102,16 +96,14 @@ main {
      }
     .container {
         display: grid;
-        height: 100vh;
-        width: 100vw;
-       grid-template-columns: 50% 50%;
-       grid-template-rows: 6 1fr;
-        grid-template-areas: 
-            "header header"
-            "dream-photo dreams"
-            "buisness-photo professional"
-            "singing-photo hobbies"
-    } 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            ". header header ."
+            ". dream-photo dreams ."
+            ". professional buisness-photo ." 
+            ". singing-photo hobbies .";
+     }
 
      h1{
         font-size: 60px;
